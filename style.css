@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.alphacoders.com/132/1326370.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 20px;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; /* Center the start button */
+    align-items: center; 
+    color: #fff;
+}
+
+.quiz-container {
+    text-align: center; 
+    position: relative; /* Position relative for absolute children */
+}
+
+.start-quiz-button {
+    background-color: green;
+    color: white;
+    padding: 20px 40px; /* Increase padding for larger button */
+    border: none;
+    border-radius: 5px;
+    font-size: 24px; /* Increase font size */
+    cursor: pointer;
+    font-family: 'Harrington', cursive; /* Use Harrington font */
+}
+
+h1, h3 {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20;
+}
+
+.buttons button {
+    margin: 10 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    display: none; /* Initially hide questions */
+    width: calc(80% - 100px); /* Full width minus menu bar width */
+    max-height: 80vh; /* Ensure height is limited to avoid overflow */
+    position: relative; /* Use relative positioning */
+    padding: 20px; /* Add padding */
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    color: #333; /* Text color */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin-left: 250px; /* Space for the menu bar */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 5px 0;
+    cursor: pointer; /* Ensure the pointer changes when hovering over the list item */
+}
+
+.answers input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green submit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #218838;
+}
+
+#scoreSection {
+    font-size: 24px; /* Increase font size for better visibility */
+    color: #333; /* Set a color for the text */
+    background-color: rgba(255, 215, 0, 0.9); /* Bright yellow background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the score section */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center align text */
+    border: 3px solid #FFD700; /* Golden border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Menu bar styling */
+.menu-bar {
+    position: fixed; /* Fixed position to stay in view */
+    left: 20px; /* Adjusted position */
+    top: 20px; /* Spacing from the top */
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-bar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.menu-bar button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

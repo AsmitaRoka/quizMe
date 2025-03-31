@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <button id="startQuizButton" class="start-quiz-button">Start Quiz</button>
+        <h1 id="quizSelectionTitle" style="display: none;">Quiz Selection</h1>
+        <div class="buttons" style="display: none;">
+            <button id="mathButton">Math</button>
+            <button id="swedishButton">Swedish</button>
+            <button id="englishButton">English</button>
+        </div>
+    </div>
+     <div id="quizContent" style="display: none;">
+        <div id="scoreSection" style="display: none;"></div>
+
+        <div class="question" id="mathQuestions">
+            <form id="mathQuiz">
+                <!-- Question 1 -->
+                <div class="question-item">
+                    <p>1. x − 7 = 3(x + 1). Vilket värde har x?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math5" value="a"> 2</li>
+                        <li><input type="radio" name="math5" value="b"> 5/2</li>
+                        <li><input type="radio" name="math5" value="c"> -4</li>
+                        <li><input type="radio" name="math5" value="d"> -5</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 2 -->
+                <div class="question-item">
+                    <p>2. f(x) = a ⋅ 3^x. Om a väljs så att f(1) = 3, vilket värde har då f(0)?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math6" value="a"> 1</li>
+                        <li><input type="radio" name="math6" value="b"> 3</li>
+                        <li><input type="radio" name="math6" value="c"> 0</li>
+                        <li><input type="radio" name="math6" value="d"> ⅓</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 3 -->
+                <div class="question-item">
+                    <p>3. f(x) = 3x − 1, g(x) = −2f(x) + 4. Vilket svarsalternativ är lika med g(1)?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math7" value="a"> 2</li>
+                        <li><input type="radio" name="math7" value="b"> 4</li>
+                        <li><input type="radio" name="math7" value="c"> 0</li>
+                        <li><input type="radio" name="math7" value="d"> 6</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 4 -->
+                <div class="question-item">
+                    <p>4. 60 % av x är lika med 40 % av y. Hur många procent av x är y?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math8" value="a"> 100%</li>
+                        <li><input type="radio" name="math8" value="b"> 66%</li>
+                        <li><input type="radio" name="math8" value="c"> 150%</li>
+                        <li><input type="radio" name="math8" value="d"> 20%</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 5 -->
+                <div class="question-item">
+                    <p>5. Arean av en kvadrat är 100 cm². Vilket svarsalternativ är närmast längden av kvadratens diagonal?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math9" value="a"> 10 cm</li>
+                        <li><input type="radio" name="math9" value="b"> 16 cm</li>
+                        <li><input type="radio" name="math9" value="c"> 14 cm</li>
+                        <li><input type="radio" name="math9" value="d"> 12 cm</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 6 -->
+                <div class="question-item">
+                    <p>6. Summan av de 30 första udda positiva heltalen är u. Summan av de 30 första jämna positiva heltalen är j. Vad är u - j?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math10" value="a"> -1</li>
+                        <li><input type="radio" name="math10" value="b"> 30</li>
+                        <li><input type="radio" name="math10" value="c"> -30</li>
+                        <li><input type="radio" name="math10" value="d"> 0</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 7 -->
+                <div class="question-item">
+                    <p>7. 60 % av x är 39. Vad är x?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math11" value="a"> 78</li>
+                        <li><input type="radio" name="math11" value="b"> 72</li>
+                        <li><input type="radio" name="math11" value="c"> 65</li>
+                        <li><input type="radio" name="math11" value="d"> 60</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 8 -->
+                <div class="question-item">
+                    <p>8. En stängd låda med innermåtten 50 cm x 54 cm x 72 cm innehåller klossar med måtten 5 cm x 6 cm x 9 cm. Hur många klossar kan det som mest finnas i lådan?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math12" value="a"> 720</li>
+                        <li><input type="radio" name="math12" value="b"> 500</li>
+                        <li><input type="radio" name="math12" value="c"> 270</li>
+                        <li><input type="radio" name="math12" value="d"> 650</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 9 -->
+                <div class="question-item">
+                    <p>9. Vad är 7 procent av 15?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math13" value="a"> 1</li>
+                        <li><input type="radio" name="math13" value="b"> 1,05</li>
+                        <li><input type="radio" name="math13" value="c"> 1,1</li>
+                        <li><input type="radio" name="math13" value="d"> 1,15</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 10 -->
+                <div class="question-item">
+                    <p>10. Vad är differensen mellan medianen och medelvärdet av de sex talen -1, 1, 2, 4, 5 och 7?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math14" value="a"> 0</li>
+                        <li><input type="radio" name="math14" value="b"> 1</li>
+                        <li><input type="radio" name="math14" value="c"> 2</li>
+                        <li><input type="radio" name="math14" value="d"> 3</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 11 -->
+                <div class="question-item">
+                    <p>11. Vilket är det största primtalet som är mindre än 100?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math15" value="a"> 91</li>
+                        <li><input type="radio" name="math15" value="b"> 93</li>
+                        <li><input type="radio" name="math15" value="c"> 97</li>
+                        <li><input type="radio" name="math15" value="d"> 99</li>
+                    </ul>
+                </div>
+        
+                <!-- Question 12 -->
+                <div class="question-item">
+                    <p>12. Medelvikten av fyra lådor är 5,5 kg och medianvikten är 5 kg. Vad är den lägsta möjliga vikten för den tyngsta lådan?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="math16" value="a"> 5,5 kg</li>
+                        <li><input type="radio" name="math16" value="b"> 6 kg</li>
+                        <li><input type="radio" name="math16" value="c"> 6,5 kg</li>
+                        <li><input type="radio" name="math16" value="d"> 7 kg</li>
+                    </ul>
+                </div>
+        
+                <!-- Submit Button -->
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+        
+        
+        <div id="swedishQuestions" class="question" style="display: none;">
+            <h3>Swedish Questions</h3>
+            <div style="max-height: 500px; overflow-y: auto; padding-right: 10px;">
+                <form id="swedishQuiz">
+                    <!-- Question 1 -->
+                    <div>
+                        <h4>1. Illustrativ?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish1" value="a"> a) idealisk</label></li>
+                            <li><label><input type="radio" name="swedish1" value="b"> b) händelserik</label></li>
+                            <li><label><input type="radio" name="swedish1" value="c"> c) skenbar</label></li>
+                            <li><label><input type="radio" name="swedish1" value="d"> d) uppmärksammad</label></li>
+                            <li><label><input type="radio" name="swedish1" value="e"> e) belysande</label></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div>
+                        <h4>2. Oförätt?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish2" value="a"> a) olycksfall</label></li>
+                            <li><label><input type="radio" name="swedish2" value="b"> b) kränkning</label></li>
+                            <li><label><input type="radio" name="swedish2" value="c"> c) osanning</label></li>
+                            <li><label><input type="radio" name="swedish2" value="d"> d) bestraffning</label></li>
+                            <li><label><input type="radio" name="swedish2" value="e"> e) missbedömning</label></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div>
+                        <h4>3. Fabel?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish3" value="a"> a) intetsägande fras</label></li>
+                            <li><label><input type="radio" name="swedish3" value="b"> b) högtidligt tal</label></li>
+                            <li><label><input type="radio" name="swedish3" value="c"> c) moraliserande saga</label></li>
+                            <li><label><input type="radio" name="swedish3" value="d"> d) dagdröm</label></li>
+                            <li><label><input type="radio" name="swedish3" value="e"> e) falsk anklagelse</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 4 -->
+                    <div>
+                        <h4>4. Helt sonika?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish4" value="a"> a) improviserat</label></li>
+                            <li><label><input type="radio" name="swedish4" value="b"> b) utan vidare</label></li>
+                            <li><label><input type="radio" name="swedish4" value="c"> c) glasklart</label></li>
+                            <li><label><input type="radio" name="swedish4" value="d"> d) fullt ut</label></li>
+                            <li><label><input type="radio" name="swedish4" value="e"> e) säkerligen</label></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div>
+                        <h4>5. Sitar?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish5" value="a"> a) stränginstrument</label></li>
+                            <li><label><input type="radio" name="swedish5" value="b"> b) klädedräkt</label></li>
+                            <li><label><input type="radio" name="swedish5" value="c"> c) spådom</label></li>
+                            <li><label><input type="radio" name="swedish5" value="d"> d) vattenpipa</label></li>
+                            <li><label><input type="radio" name="swedish5" value="e"> e) bönematta</label></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Question 6 -->
+                    <div>
+                        <h4>6. Krinolin?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish6" value="a"> a) bakverk</label></li>
+                            <li><label><input type="radio" name="swedish6" value="b"> b) sänghimmel</label></li>
+                            <li><label><input type="radio" name="swedish6" value="c"> c) smycke</label></li>
+                            <li><label><input type="radio" name="swedish6" value="d"> d) musikstycke</label></li>
+                            <li><label><input type="radio" name="swedish6" value="e"> e) kjol</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 7 -->
+                    <div>
+                        <h4>7. Fordran?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish7" value="a"> a) förskott</label></li>
+                            <li><label><input type="radio" name="swedish7" value="b"> b) sparkapital</label></li>
+                            <li><label><input type="radio" name="swedish7" value="c"> c) återbäring</label></li>
+                            <li><label><input type="radio" name="swedish7" value="d"> d) betalning</label></li>
+                            <li><label><input type="radio" name="swedish7" value="e"> e) krav</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 8 -->
+                    <div>
+                        <h4>8. Oförblommerat?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish8" value="a"> a) oskickligt</label></li>
+                            <li><label><input type="radio" name="swedish8" value="b"> b) rak på sak</label></li>
+                            <li><label><input type="radio" name="swedish8" value="c"> c) inställsamt</label></li>
+                            <li><label><input type="radio" name="swedish8" value="d"> d) oanständigt</label></li>
+                            <li><label><input type="radio" name="swedish8" value="e"> e) med viss tvekan</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 9 -->
+                    <div>
+                        <h4>9. Påtaglig?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish9" value="a"> a) hastig</label></li>
+                            <li><label><input type="radio" name="swedish9" value="b"> b) märkbar</label></li>
+                            <li><label><input type="radio" name="swedish9" value="c"> c) bekant</label></li>
+                            <li><label><input type="radio" name="swedish9" value="d"> d) passande</label></li>
+                            <li><label><input type="radio" name="swedish9" value="e"> e) särskild</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 10 -->
+                    <div>
+                        <h4>10. Inkonsekvens?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish10" value="a"> a) taktlöshet</label></li>
+                            <li><label><input type="radio" name="swedish10" value="b"> b) tveksamhet</label></li>
+                            <li><label><input type="radio" name="swedish10" value="c"> c) missförhållande</label></li>
+                            <li><label><input type="radio" name="swedish10" value="d"> d) inblandning</label></li>
+                            <li><label><input type="radio" name="swedish10" value="e"> e) självmotsägelse</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 11 -->
+                    <div>
+                        <h4>11. Artrit?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish11" value="a"> a) kurvdiagram</label></li>
+                            <li><label><input type="radio" name="swedish11" value="b"> b) ädelsten</label></li>
+                            <li><label><input type="radio" name="swedish11" value="c"> c) moln information</label></li>
+                            <li><label><input type="radio" name="swedish11" value="d"> d) ledinflammation</label></li>
+                            <li><label><input type="radio" name="swedish11" value="e"> e) kyrkorum</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 12 -->
+                    <div>
+                        <h4>12. Nit?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish12" value="a"> a) anständighet</label></li>
+                            <li><label><input type="radio" name="swedish12" value="b"> b) renlighet</label></li>
+                            <li><label><input type="radio" name="swedish12" value="c"> c) ihärdighet</label></li>
+                            <li><label><input type="radio" name="swedish12" value="d"> d) högfärdighet</label></li>
+                            <li><label><input type="radio" name="swedish12" value="e"> e) sparsamhet</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 13 -->
+                    <div>
+                        <h4>13. Kontaminerad?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish13" value="a"> a) oavbruten</label></li>
+                            <li><label><input type="radio" name="swedish13" value="b"> b) undersökt</label></li>
+                            <li><label><input type="radio" name="swedish13" value="c"> c) förbjuden</label></li>
+                            <li><label><input type="radio" name="swedish13" value="d"> d) befruktad</label></li>
+                            <li><label><input type="radio" name="swedish13" value="e"> e) förorenad</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 14 -->
+                    <div>
+                        <h4>14. Kontinuum?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish14" value="a"> a) förlängning</label></li>
+                            <li><label><input type="radio" name="swedish14" value="b"> b) motsatsförhållande</label></li>
+                            <li><label><input type="radio" name="swedish14" value="c"> c) evigt liv</label></li>
+                            <li><label><input type="radio" name="swedish14" value="d"> d) obruten följd</label></li>
+                            <li><label><input type="radio" name="swedish14" value="e"> e) upplösning</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 15 -->
+                    <div>
+                        <h4>15. Insinuera?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish15" value="a"> a) berömma</label></li>
+                            <li><label><input type="radio" name="swedish15" value="b"> b) ljuga</label></li>
+                            <li><label><input type="radio" name="swedish15" value="c"> c) gissa</label></li>
+                            <li><label><input type="radio" name="swedish15" value="d"> d) antyda</label></li>
+                            <li><label><input type="radio" name="swedish15" value="e"> e) misstänka</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Question 16 -->
+                    <div>
+                        <h4>16. Sargad?</h4>
+                        <ul class="answers">
+                            <li><label><input type="radio" name="swedish16" value="a"> a) trängd</label></li>
+                            <li><label><input type="radio" name="swedish16" value="b"> b) upprörd</label></li>
+                            <li><label><input type="radio" name="swedish16" value="c"> c) lurad</label></li>
+                            <li><label><input type="radio" name="swedish16" value="d"> d) skadad</label></li>
+                            <li><label><input type="radio" name="swedish16" value="e"> e) straffad</label></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Submit button -->
+                    <button type="submit">Submit Quiz</button>
+                </form>
+            </div>
+        </div>
+        
+         
+        <div id="englishQuestions" class="question" style="display: none;">
+            <h3>English Questions</h3>
+            <form id="englishQuiz">
+                <div>
+                <h4>1. What is the synonym of 'abundant'?</h4>
+                <ul class="answers">
+                    <li><label><input type="radio" name="english1" value="a"> a) Scarce</label></li>
+                    <li><label><input type="radio" name="english1" value="b"> b) Plentiful</label></li>
+                    <li><label><input type="radio" name="english1" value="c"> c) Rare</label></li>
+                    <li><label><input type="radio" name="english1" value="d"> d) Insufficient</label></li>
+                </ul>
+            </div>
+            <div>
+                <h4>2. Choose the correct word to complete the sentence: "She was feeling very ______ about the upcoming exam."</h4>
+                <ul class="answers">
+                    <li><label><input type="radio" name="english2" value="a"> a) anxious</label></li>
+                    <li><label><input type="radio" name="english2" value="b"> b) calm</label></li>
+                    <li><label><input type="radio" name="english2" value="c"> c) indifferent</label></li>
+                    <li><label><input type="radio" name="english2" value="d"> d) joyful</label></li>
+                </ul>
+            </div>
+            <div>
+                <h4>3. What does the idiom "break the ice" mean?</h4>
+                <ul class="answers">
+                    <li><label><input type="radio" name="english3" value="a"> a) To shatter something</label></li>
+                    <li><label><input type="radio" name="english3" value="b"> b) To initiate conversation in a social setting</label></li>
+                    <li><label><input type="radio" name="english3" value="c"> c) To cool down a situation</label></li>
+                    <li><label><input type="radio" name="english3" value="d"> d) To start a fight</label></li>
+                </ul>
+            </div>
+            <div>
+                <h4>4. Which sentence is grammatically correct?</h4>
+                <ul class="answers">
+                    <li><label><input type="radio" name="english4" value="a"> a) He go to the store yesterday.</label></li>
+                    <li><label><input type="radio" name="english4" value="b"> b) He gone to the store yesterday.</label></li>
+                    <li><label><input type="radio" name="english4" value="c"> c) He went to the store yesterday.</label></li>
+                    <li><label><input type="radio" name="english4" value="d"> d) He goes to the store yesterday.</label></li>
+                </ul>
+            </div>
+            <div>
+                <h4>5. What is the meaning of the word 'meticulous'?</h4>
+                <ul class="answers">
+                    <li><label><input type="radio" name="english5" value="a"> a) Careless</label></li>
+                    <li><label><input type="radio" name="english5" value="b"> b) Detailed and precise</label></li>
+                    <li><label><input type="radio" name="english5" value="c"> c) Quick and efficient</label></li>
+                    <li><label><input type="radio" name="english5" value="d"> d) Unorganized</label></li>
+                </ul>
+            </div>
+                <button type="submit" class="submit">Submit English Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="menu-bar" id="menuBar" style="display: none;">
+        <button id="menuMathButton">Math</button>
+        <button id="menuSwedishButton">Swedish</button>
+        <button id="menuEnglishButton">English</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
